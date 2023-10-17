@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuração para Smartphones */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    body {
+        background-color: #5f2c82;
+        position: relative;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 18%);
+        border: 1px solid black;
+        border-radius: 10px;
+        background: white url(../imagens/metal.jpg) top left / 100% 33% no-repeat fixed; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+
+    h1 {
+        margin-top: 155px;
+        text-align: center;
+    }
+
+    p {
+        margin: 5px 7px;
+    }
+
+    .container-email-senha {
+        margin: 5px 5px;
+        background-color: #481f64;
+        border-radius: 10px;
+        width: 240px;
+    }
+    
+    span {
+        margin-left: 5px;
+        color: white;
+        width: 20px;
+    }
+
+    #email, #senha {
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #93dbd9;
+        width: 199px;
+        height: 47px;
+    }
+
+    .botoes {
+        border-radius: 10px;
+        margin: 2px 5px;
+        width: 240px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    #entrar {
+        margin-top: -1.5px;
+        background-color: #5c8d8b;
+        color: white;
+
+    }
+
+    #entrar:hover {
+        background-color: #385e5d;
+    }
+
+    #esqueci-senha {
+        margin-bottom: 5px;
+        background-color: white;
+        background: url(../imagens/cartinha.svg) 80% / contain no-repeat fixed;
+        color: #385e5d;
+    }
+
+    #esqueci-senha:hover {
+        background-color: #72b9b6;
+    }
+}
+
+/* Configuração para tablets */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 460px;
+        background: white url(../imagens/metal.jpg) left / 140px 100% no-repeat fixed; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+    
+    h1 {
+        margin: 5px 250px;
+    }
+
+    p {
+        margin-left: 145px;
+    }
+
+    .container-email-senha {
+        margin: 5px 145px;
+        background-color: #481f64;
+        border-radius: 10px;
+        width: 307px;
+    }
+
+    span {
+        margin-left: 10px;
+        color: white;
+        width: 20px;
+    }
+
+    #email, #senha {
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #93dbd9;
+        width: 262px;
+        height: 47px;
+    
+    }
+
+    .botoes {
+        border-radius: 10px;
+        margin: 2px 145px;
+        width: 307px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    #entrar {
+        margin-top: -1.5px;
+        background-color: #5c8d8b;
+        color: white;
+    }
+
+    #entrar:hover {
+        background-color: #385e5d;
+    }
+
+    #esqueci-senha {
+        margin-bottom: 5px;
+        background-color: white;
+        background: url(../imagens/cartinha.svg) 72% / contain no-repeat fixed;
+        color: #385e5d;
+    }
+
+    #esqueci-senha:hover {
+        background-color: #72b9b6;
+    }
+}
+
+/* Configuração para desktops com telas pequenas */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d  );
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 730px;
+        background: white url(../imagens/metal.jpg) right / 365px 100% no-repeat fixed; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+
+    h1 {
+        margin: 5px 150px;
+    }
+
+    p {
+        margin-left: 5px;
+        width: 355px;
+    }
+
+    .container-email-senha {
+        margin: 5px 5px;
+        background-color: #481f64;
+        border-radius: 10px;
+        width: 355px;
+    }
+
+    span {
+        margin-left: 10px;
+        color: white;
+        width: 20px;
+    }
+
+    #email, #senha {
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #93dbd9;
+        width: 310px;
+        height: 47px;
+    }
+
+    .botoes {
+        border-radius: 10px;
+        margin: 2px 5px;
+        width: 355px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    #entrar {
+        margin-top: -1.5px;
+        background-color: #5c8d8b;
+        color: white;
+    }
+
+    #entrar:hover {
+        background-color: #385e5d;
+    }
+
+    #esqueci-senha {
+        margin-bottom: 5px;
+        background-color: white;
+        background: url(../imagens/cartinha.svg) 69% / contain no-repeat fixed;
+        color: #385e5d;
+    }
+
+    #esqueci-senha:hover {
+        background-color: #72b9b6;
+    }
+}
+
+/* Configuração para desktops com telas grandes */
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d  );
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 950px;
+        background: white url(../imagens/metal.jpg) right / 475px 100% no-repeat fixed; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+
+    h1 {
+        margin: 5px 210px; 
+    }
+
+    p {
+        margin: 5px 5px;
+        width: 470px;
+    }
+
+    .container-email-senha {
+        margin: 5px 5px;
+        background-color: #481f64;
+        border-radius: 10px;
+        width: 462px;
+    }
+
+    span {
+        margin-left: 10px;
+        color: white;
+        width: 20px;
+    }
+
+    #email, #senha {
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #93dbd9;
+        width: 417px;
+        height: 47px;
+    }
+
+    .botoes {
+        border-radius: 10px;
+        margin: 3px 5px;
+        width: 462px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    #entrar {
+        margin-top: 0.8px;
+        background-color: #5c8d8b;
+        color: white;
+    }
+
+    #entrar:hover {
+        background-color: #385e5d;
+    }
+
+    #esqueci-senha {
+        margin-bottom: 5px;
+        background-color: white;
+        background: url(../imagens/cartinha.svg) 64% / contain no-repeat fixed;
+        color: #385e5d;
+    }
+
+    #esqueci-senha:hover {
+        background-color: #72b9b6;
+    }
+}
